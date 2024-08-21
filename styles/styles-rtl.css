@@ -9,6 +9,34 @@
 .main-color{background-color:var(--theme-color) !important;}
 .main-color-text{color:var(--theme-color) !important;}
 
+/* To move the sidebar to the right */
+header, main, footer {
+    padding-right: 300px;
+    padding-left: 0;
+}
+
+ul.sidenav.sidenav-fixed {
+    left: auto;
+    right: 0;
+    border-right: none;
+    border-left: 1px solid #dddddd;
+}
+
+/* Display settings on small pages */
+@media only screen and (max-width: 992px) {
+    header, main, footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    ul.sidenav.sidenav-fixed {
+        right: 0;
+        left: auto;
+    }
+}
+
+
+
 /* body */
 body{font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
 
